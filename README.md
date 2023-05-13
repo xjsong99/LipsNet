@@ -4,7 +4,8 @@ This is a PyTorch implementation of LipsNet.
 The paper is accepted at ICML 2023 with the title '*LipsNet: A Smooth and Robust Neural Network with Adaptive Lipschitz Constant for High Accuracy Optimal Control*'.
 
 The overall structure is shown below:
-![](figures/structure.png)
+
+<img src="figures/structure.png" width="50%">
 
 ## Requirements
 The version of PyTorch should be higher than 1.11 and lower than 2.3,
@@ -34,3 +35,14 @@ out = net(input)
 ```
 
 More details can be found in *lipsnet.py*.
+
+## Reference
+```
+@inproceedings{song2023lipsnet,
+  title={LipsNet: A Smooth and Robust Neural Network with Adaptive Lipschitz Constant for High Accuracy Optimal Control},
+  author={Song, Xujie and Duan, Jingliang and Wang, Wenxuan and Li, Shengbo Eben and Chen, Chen and Cheng, Bo and Zhang, Bo and Wei, Junqing and Wang, Xiaoming Simon},
+  booktitle={International Conference on Machine Learning},
+  year={2023},
+  organization={PMLR}
+}
+```
