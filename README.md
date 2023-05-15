@@ -2,13 +2,14 @@
 This is a **PyTorch** implementation of LipsNet.
 
 The paper is accepted at **ICML 2023** with the title '***LipsNet: A Smooth and Robust Neural Network with Adaptive Lipschitz Constant for High Accuracy Optimal Control***'.
+The poster is uploaded [here](https://github.com/jerry99s/LipsNet/blob/main/materials/poster.pdf).
 
 LipsNet can serve as **actor networks** in most **actor-critic reinforcement learning** algorithms, in order to reduce the action fluctuation.
 A low level of action fluctuation will protect mechanical components from the wear and tear, and reduce safety hazards.
 
 The overall structure is shown below:
 
-<img src="figures/structure.png" width="45%">
+<img src="materials/structure.png" width="45%">
 
 ## Requirements
 The **version of PyTorch** should be higher than 1.11 and lower than 2.3,
