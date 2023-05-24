@@ -90,13 +90,20 @@ if __name__ == "__main__":
     net = LipsNet(f_sizes=[intput_dim,64,64,output_dim], f_hid_nonliear=nn.ReLU, f_out_nonliear=nn.Identity,
                   global_lips=False, k_init=1, k_sizes=[intput_dim,32,1], k_hid_act=nn.Tanh, k_out_act=nn.Identity,
                   loss_lambda=0.1, eps=1e-4, squash_action=True)
+    optimizer = torch.optim.Adam([
+                {'params':net.f_net.parameters(), 'lr':3e-5},
+                {'params':net.k_net.parameters(), 'lr':1e-5}])
     input = torch.rand(128, intput_dim)
+
     # training
     net.train()
     out = net(input)
     loss = (out ** 2).mean()
     loss.backward()
+    optimizer.step()
+    optimizer.zero_grad()
     net.eval()
+    
     # eval
     net.eval()
     input = torch.rand(128, intput_dim)
