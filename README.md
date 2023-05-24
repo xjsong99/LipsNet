@@ -31,6 +31,8 @@ net.train()
 out = net(input)
 ...
 loss.backward()
+optimizer.step()
+optimizer.zero_grad()
 net.eval()
 
 # evaluation
