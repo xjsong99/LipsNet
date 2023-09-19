@@ -3,7 +3,7 @@ This is a **PyTorch** implementation of LipsNet.
 
 The paper is accepted at **ICML 2023** with the title '***LipsNet: A Smooth and Robust Neural Network with Adaptive Lipschitz Constant for High Accuracy Optimal Control***'.
 
-Links: [[**Paper**](https://openreview.net/pdf?id=ud9QEKm0Ym)], [[**Poster**](https://github.com/jerry99s/LipsNet/blob/main/materials/poster.pdf)].
+Links: [[**Paper**](https://proceedings.mlr.press/v202/song23b.html)], [[**Poster**](https://github.com/jerry99s/LipsNet/blob/main/materials/poster.pdf)].
 
 <img src="materials/thumbnail.png" width="45%">
 
@@ -47,11 +47,15 @@ More details can be found in *lipsnet.py*.
 
 ## Reference
 ```
-@inproceedings{song2023lipsnet,
-  title={LipsNet: A Smooth and Robust Neural Network with Adaptive Lipschitz Constant for High Accuracy Optimal Control},
-  author={Song, Xujie and Duan, Jingliang and Wang, Wenxuan and Li, Shengbo Eben and Chen, Chen and Cheng, Bo and Zhang, Bo and Wei, Junqing and Wang, Xiaoming Simon},
-  booktitle={International Conference on Machine Learning},
-  year={2023},
-  organization={PMLR}
+@InProceedings{pmlr-v202-song23b,
+  title = {LipsNet: A Smooth and Robust Neural Network with Adaptive Lipschitz Constant for High Accuracy Optimal Control},
+  author = {Song, Xujie and Duan, Jingliang and Wang, Wenxuan and Li, Shengbo Eben and Chen, Chen and Cheng, Bo and Zhang, Bo and Wei, Junqing and Wang, Xiaoming Simon},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  pages = {32253--32272},
+  year = {2023},
+  volume = {202},
+  series = {Proceedings of Machine Learning Research},
+  month = {23--29 Jul},
+  publisher = {PMLR}
 }
 ```
