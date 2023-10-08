@@ -88,7 +88,7 @@ if __name__ == "__main__":
     intput_dim = 4
     output_dim = 2
     net = LipsNet(f_sizes=[intput_dim,64,64,output_dim], f_hid_nonliear=nn.ReLU, f_out_nonliear=nn.Identity,
-                  global_lips=False, k_init=1, k_sizes=[intput_dim,32,1], k_hid_act=nn.Tanh, k_out_act=nn.Identity,
+                  global_lips=False, k_init=1, k_sizes=[intput_dim,32,1], k_hid_act=nn.Tanh, k_out_act=nn.Softplus,
                   loss_lambda=0.1, eps=1e-4, squash_action=True)
     optimizer = torch.optim.Adam([
                 {'params':net.f_net.parameters(), 'lr':3e-5},
